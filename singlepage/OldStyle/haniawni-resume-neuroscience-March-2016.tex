@@ -1,0 +1,208 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+	
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Hani Awni}}
+
+905 W Main St.\ \ \textbullet
+\ \ Urbana, Il, 61801\\
+(224) 715-5995\ \ \textbullet
+\ \ hani.awni@gmail.com 
+\end{center}
+
+\vspace{-0.8em}
+\hrule
+\vspace{-0.8em}
+\subsection*{Education}
+\vspace{-0.8em}
+%\begin{indentsection}{\parindent}
+%\begin{itemize}
+%	\parskip=0.1em
+
+%	\item 
+	\headerrow
+		{\textbf{University of Illinois: Urbana-Champaign}}
+		{\textbf{May 2015-May 2017}}
+	\\
+	\headerrow
+		{\emph{Electrical Engineering BS}}
+		{\emph{Last 2 Years GPA: 3.77/4.0}}
+	\headerrow
+		{\textbf{University of Illinois: Urbana-Champaign}}
+		{\textbf{May 2013}}
+	\\
+	\headerrow
+		{\emph{Brain-Machine Interfacing Custom BS, Computer Science Department in College of Engineering}}
+		{\emph{GPA: 3.2/4.0}}
+
+		\parskip=-0.3em
+	\begin{itemize*}
+		\item \textbf{Major Description:} Expanded computer science major with deep and wide background in cognitive science, neuroscience, and signal processing. Third ever custom degree awarded by Engineering College. 
+		\end{itemize*}
+		\parskip=-0.3em
+		\textbf{Relevant Coursework:} Control Theory, State Space Control, Embedded Systems, Machine Learning, Neural Network Modeling, Cognitive Psychology, EEG Design, Integrative Neuroscience, Biomedical Imaging, Neuroethology 
+	
+%\end{indentsection}
+%\end{itemize}
+
+
+
+\hrule
+\vspace{-.5em}
+\subsection*{Publications}
+\vspace{-0.3em}
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[]
+	Hani Awni, J. Norton, S. Umunna, K. Federmeier, and T. Bretl. Towards A Brain Computer Interface Based on the N2PC Event Related Potential. IEEE EMBS NER 2013 in San Diego, CA, 978-1-4673-1969-0/1021-1024.
+\end{description*}
+\end{indentsection}
+
+
+\vspace{-0.5em}
+\hrule
+\vspace{-0.5em}
+\subsection*{Experience}
+\begin{indentsection}{\parindent}
+%\begin{itemize}
+%\vspace{-0.1em}
+%	\item
+	\headerrow
+		{\textbf{Self-Employed}}
+		{\textbf{San Francisco, CA}}
+	\\
+	\headerrow
+		{\emph{Independent Neuroengineer \& House Captain}}
+		{\emph{April 2014 - May 2015}}
+\vspace{-2em}
+	\begin{itemize*}
+		\item Worked on myriad neuroengineering projects, including Moodband, a wearable for EEG-based emotional state visualization; ley*, a MFQ-scheduler-inspired to-do system; Respectable, a social-graph analysis tool; an Abalone AI competition; and NOS, a generalized BCI in collaboration with Randal Koene.
+		\item Taking online courses in chaos and complexity theory, medical neuroscience, robotics, and linear algebra.
+		\item Researched possible BCIs, especially in the contexts of both potential game designs and mental health.
+		\item Helped direct the setup and growth of a 25-person,  intentional community in San Francisco.
+		\item Resolved or mediated inter-resident conflicts with an eye toward the overarching goal of the community.
+	\end{itemize*}
+\vspace{-0.1em}
+%	\item
+	\headerrow
+		{\textbf{Palantir}}
+		{\textbf{Palo Alto, CA}}
+	\\
+	\headerrow
+		{\emph{Software Developer}}
+		{\emph{June - December 2013}}
+\vspace{-2em}
+	\begin{itemize*}
+		\item Expanded and maintained web interface in Typescript, Coffeescript, and Java.
+		\parskip=0.1em
+		\item Designed, developed, and implemented additional feature to core product in Java Swing.
+	\end{itemize*}
+
+%	\item
+	\headerrow
+		{\textbf{Dr. Federmeier's Neurolinguistics Lab, Dr. Hummel's Cognitive Modeling Lab}}
+		{\textbf{Urbana, IL}}
+	\\
+	\headerrow
+		{\emph{Lab Technician, Analyst, \& Assistant}}
+		{\emph{January 2010 -- May 2013}}
+	\vspace{-2em}	
+	\begin{itemize*}
+		\item Designed \& implemented experiment interfaces to best test working theories.
+		\parskip=0.175em
+		\item Assisted graduate students both with writing experiment code and with data mining of ERP results despite abundance of noise and artifacts.
+		\parskip=0.175em
+		\item Aided in setup and running of subjects in EEG experiments, enabling high subject throughput.
+		\parskip=0.175em
+		\item Ensured a comfortable atmosphere for test subjects despite otherwise abnormal circumstances.
+		\parskip=0.175em
+		\item Taught new research assistants and graduate students efficient procedures in use of lab equipment.
+		\parskip=0.175em
+		\item Coded data analysis and results interpretation in light of relevant theories.
+	\end{itemize*}
+
+%	\item
+	\headerrow
+		{\textbf{Baxter Credit Union}}
+		{\textbf{Vernon Hills, IL}}
+	\\
+	\headerrow
+		{\emph{Database Architect Intern}}
+		{\emph{June 2008 -- August 2011}}
+		\vspace{-2em}
+	\begin{itemize*}
+		\item Designed, coordinated, and implemented expansions to database processing capability.
+		\parskip=0.175em
+		\item Collaborated with non-technical employees throughout the company to clarify the aims of various projects and subsequently implemented projects according to their specifications.
+		\parskip=0.175em
+		\item Trained and led new interns in T-SQL programming on several database-improvement projects.
+	\end{itemize*}
+
+\end{indentsection}
+
+\vspace{-0.8em}
+\hrule
+\vspace{-0.5em}
+
+\subsection*{Leadership Positions, Group Membership, Special Interests \& Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{itemize}
+	\parskip=0.175em
+	\item
+	Founding Chair of SIGNeuro, 2015. Member of ACM, BMES, IEEE, NESA
+	\parskip=0.175em
+	\item
+	Modeling of intelligence and relational reasoning, particularly using neural networks. 
+	\parskip=0.175em
+	\item Programming Languages: Java, Python, C++, SQL Variants(POSTGRESQL, T-SQL), OCAML	
+	\parskip=0.175em
+	\item Other: Unity Engine, NetLogo, \LaTeX
+\end{itemize}
+\end{indentsection}
+
+\end{document}
