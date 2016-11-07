@@ -18,3 +18,4 @@ My Resume!
   3. Squash commits where appropriate
   4. Force push update (lol)
 3. Update readme if necessary
+4. Update local copies if necessary
