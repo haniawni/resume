@@ -1,0 +1,10 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-0}{}{Education}}{1}\relax 
+\doTocEntry\tocsubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-0}{}{Classes}}{1}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-0}{}{Research}}{1}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-0}{}{Experience}}{1}\relax 
+\doTocEntry\tocsubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-0}{}{Vocational}}{1}\relax 
+\doTocEntry\tocsubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-0}{}{Lab Experience}}{2}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-0}{}{Skills}}{3}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-0}{}{Partial Projects List}}{4}\relax 
+\par 
